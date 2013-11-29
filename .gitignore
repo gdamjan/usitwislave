@@ -1,2 +1,11 @@
 *.o
 *.a
+*.map
+*.d
+*.eep
+*.elf
+*.hex
+*.lss
+*.lst
+*.map
+*.sym
