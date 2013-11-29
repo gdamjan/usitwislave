@@ -17,7 +17,9 @@
 static void twi_callback (uint8_t input_buffer_length, const uint8_t *input_buffer,
                           uint8_t *output_buffer_length, uint8_t *output_buffer)
 {
-    OCR0B = input_buffer[0];
+    if (input_buffer_length > 0) {
+        OCR0B = input_buffer[0];
+    }
     *output_buffer_length = 0;
 }
 
